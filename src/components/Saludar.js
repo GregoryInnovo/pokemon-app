@@ -1,11 +1,18 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export default function Saludar({ props }) {
-  const { name } = props;
+export default function Saludar(props) {
+  const { firstName, lastName } = props;
   return (
     <View>
-      <Text>name</Text>
+      <Text>
+        Hola {firstName} {lastName}
+      </Text>
     </View>
   );
 }
+
+Saludar.defaultProps = {
+  firstName: "Gregson",
+  lastName: "Murcia Castro",
+};

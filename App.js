@@ -10,7 +10,7 @@ export default function App() {
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
       <LoginForm />
-      <Saludar name="Gregson" />
+      <Saludar firstName="Gregson" lastName="Murcia" />
     </View>
   );
 }
