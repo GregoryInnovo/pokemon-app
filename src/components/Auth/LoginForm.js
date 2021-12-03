@@ -7,7 +7,7 @@ export default function LoginForm() {
       <Text>Component Login Form</Text>
       <TextInput placeholder="Email" />
       <TextInput placeholder="Contraseña" />
-      <Button tittle="Enviar" onPres={() => console.log("Me presionaste")} />
+      {/* <Button tittle="Enviar" onPres={() => console.log("Me presionaste")} /> */}
     </View>
   );
 }
