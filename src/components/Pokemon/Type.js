@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 import { map, capitalize } from "lodash";
 import getColorByPokemonType from "../../utils/getColorByPokemonType";
+
 export default function Type(props) {
   const { types } = props;
 
