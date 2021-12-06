@@ -3,11 +3,14 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import NavigationDrawer from "./src/navigation/NavigationDrawer";
 import NavigationTab from "./src/navigation/NavigationTab";
+import { AuthProvider } from "./src/context/AuthContext";
 
 export default function App() {
   return (
     <NavigationContainer>
-      <NavigationTab />
+      <AuthProvider>
+        <NavigationTab />
+      </AuthProvider>
     </NavigationContainer>
   );
 }
