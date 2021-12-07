@@ -25,9 +25,9 @@ export default function LoginForm() {
       const { userName, password } = formValue;
       if (userName !== user.userName || password !== user.password) {
         setError("El usuario o la contraseña es incorrecta");
-        alert("El usuario o la contraseña es incorrecta");
+        console.log("El usuario o la contraseña es incorrecta");
       } else {
-        alert("Entro");
+        console.log("Entro");
         login(userDetails);
       }
     },
